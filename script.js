@@ -111,7 +111,7 @@ const perfumeDatabase = [
         price: "R$ 379,90",
         image: "images/sabah_al_ward.jpg", // Placeholder - SUBSTITUA PELA IMAGEM REAL
         tags: ["floral", "oriental", "feminino", "intenso", "quente", "romantico", "eventos_noite"],
-        url: "https://nasnuvensperfumes.com.br/produtos/sabah-al-ward-100ml/" // SUBSTITUA PELO LINK REAL
+        url: "https://nasnuvensperfumes.com.br/produtos/sabah-al-ward-100ml" // SUBSTITUA PELO LINK REAL
     },
     {
         id: 2,
