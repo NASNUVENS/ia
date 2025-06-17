@@ -104,15 +104,7 @@ const quizQuestions = [
 
 // Banco de dados de perfumes (substitua com seus produtos reais)
 const perfumeDatabase = [
-    {
-        id: 1,
-        name: "Sabah Al Ward",
-        description: "Perfume árabe floral com notas de rosa e especiarias orientais.",
-        price: "R$ 379,90",
-        image: "images/sabah_al_ward.jpg", // Placeholder - SUBSTITUA PELA IMAGEM REAL
-        tags: ["floral", "oriental", "feminino", "intenso", "quente", "romantico", "eventos_noite"],
-        url: "https://nasnuvensperfumes.com.br/produtos/sabah-al-ward-100ml" // SUBSTITUA PELO LINK REAL
-    },
+    
     {
         id: 2,
         name: "Fakhar",
