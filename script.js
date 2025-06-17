@@ -104,87 +104,95 @@ const quizQuestions = [
 
 // Banco de dados de perfumes (substitua com seus produtos reais)
 const perfumeDatabase = [
-    
+    {
+        id: 1,
+        name: "Sabah Al Ward",
+        description: "Perfume árabe floral com notas de rosa e especiarias orientais.",
+        price: "R$ 379,90",
+        image: "images/IMG_1346.jpeg", // ATUALIZADO COM SUA IMAGEM
+        tags: ["floral", "oriental", "feminino", "intenso", "quente", "romantico", "eventos_noite"],
+        url: "https://www.nasnuvensperfumes.com.br/produtos/sabah-al-ward-100ml"
+    },
     {
         id: 2,
         name: "Fakhar",
         description: "Floral amadeirado elegante e sofisticado para mulheres modernas.",
         price: "R$ 399,90",
-        image: "images/fakhar.jpg", // Placeholder - SUBSTITUA PELA IMAGEM REAL
+        image: "images/IMG_1352.jpeg", // ATUALIZADO COM SUA IMAGEM
         tags: ["floral", "amadeirado", "feminino", "moderado", "classico", "dia_trabalho"],
-        url: "https://nasnuvensperfumes.com.br/produtos/fakhar-100ml-ref-olfativa-linterdit/" // SUBSTITUA PELO LINK REAL
+        url: "https://www.nasnuvensperfumes.com.br/produtos/fakhar-100ml"
     },
     {
         id: 3,
         name: "Royal Amber",
         description: "Fresco e sofisticado, perfeito para o dia a dia.",
         price: "R$ 79,90",
-        image: "images/royal_amber.jpg", // Placeholder - SUBSTITUA PELA IMAGEM REAL
+        image: "images/IMG_1347.jpeg", // ATUALIZADO COM SUA IMAGEM
         tags: ["citrico", "fresco", "unissex", "suave", "moderno", "dia_trabalho", "frutas_citricas"],
-        url: "https://nasnuvensperfumes.com.br/produtos/royal-amber-decants-ref-olfativa-erba-pura-durrat/" // SUBSTITUA PELO LINK REAL
+        url: "https://www.nasnuvensperfumes.com.br/produtos/royal-amber-decants"
     },
     {
         id: 4,
         name: "Yara",
         description: "Perfume árabe doce e envolvente, com notas gourmand que conquistam.",
         price: "R$ 49,90",
-        image: "images/yara.jpg", // Placeholder - SUBSTITUA PELA IMAGEM REAL
+        image: "images/IMG_1345.jpeg", // ATUALIZADO COM SUA IMAGEM
         tags: ["doces", "oriental", "feminino", "moderado", "romantico_delicado", "todas_ocasioes"],
-        url: "https://nasnuvensperfumes.com.br/produtos/yara-decants/" // SUBSTITUA PELO LINK REAL
+        url: "https://www.nasnuvensperfumes.com.br/produtos/yara-decants"
     },
     {
         id: 5,
         name: "1 Million",
         description: "Perfume masculino marcante e sedutor, símbolo de luxo e poder.",
         price: "R$ 619,90",
-        image: "images/1_million.jpg", // Placeholder - SUBSTITUA PELA IMAGEM REAL
+        image: "images/IMG_1354.jpeg", // ATUALIZADO COM SUA IMAGEM
         tags: ["especiarias", "amadeirado", "masculino", "intenso", "sedutor", "eventos_noite"],
-        url: "https://nasnuvensperfumes.com.br/produtos/1-million/" // SUBSTITUA PELO LINK REAL
+        url: "https://www.nasnuvensperfumes.com.br/produtos/1-million-100ml"
     },
     {
         id: 6,
         name: "Light Blue",
         description: "Fresco e aquático, perfeito para o verão e ocasiões casuais.",
         price: "R$ 599,90",
-        image: "images/light_blue.jpg", // Placeholder - SUBSTITUA PELA IMAGEM REAL
+        image: "images/IMG_1350.jpeg", // ATUALIZADO COM SUA IMAGEM
         tags: ["aquaticas", "citrico", "unissex", "suave", "casual", "primavera_verao", "frutas_citricas"],
-        url: "https://nasnuvensperfumes.com.br/produtos/light-blue/" // SUBSTITUA PELO LINK REAL
+        url: "https://www.nasnuvensperfumes.com.br/produtos/light-blue-100ml"
     },
     {
         id: 7,
         name: "Chloé",
         description: "Floral feminino delicado e romântico, elegância em estado puro.",
         price: "R$ 689,90",
-        image: "images/chloe.jpg", // Placeholder - SUBSTITUA PELA IMAGEM REAL
+        image: "images/IMG_1353.jpeg", // ATUALIZADO COM SUA IMAGEM
         tags: ["flores", "floral", "feminino", "suave", "romantico_delicado", "classico"],
-        url: "https://nasnuvensperfumes.com.br/produtos/chloe/" // SUBSTITUA PELO LINK REAL
+        url: "https://www.nasnuvensperfumes.com.br/produtos/chloe-75ml"
     },
     {
         id: 8,
         name: "Invictus",
         description: "Perfume masculino esportivo e energético, para homens vencedores.",
         price: "R$ 519,90",
-        image: "images/invictus.jpg", // Placeholder - SUBSTITUA PELA IMAGEM REAL
+        image: "images/IMG_1348.jpeg", // ATUALIZADO COM SUA IMAGEM
         tags: ["aquaticas", "fresco", "masculino", "moderado", "casual", "moderno"],
-        url: "https://nasnuvensperfumes.com.br/produtos/invictus/" // SUBSTITUA PELO LINK REAL
+        url: "https://www.nasnuvensperfumes.com.br/produtos/invictus-100ml"
     },
     {
         id: 9,
         name: "Good Girl",
         description: "Perfume feminino sedutor e misterioso, para mulheres confiantes.",
         price: "R$ 59,90",
-        image: "images/good_girl.jpg", // Placeholder - SUBSTITUA PELA IMAGEM REAL
+        image: "images/IMG_1351.jpeg", // ATUALIZADO COM SUA IMAGEM
         tags: ["doces", "oriental", "feminino", "intenso", "sedutor", "eventos_noite"],
-        url: "https://nasnuvensperfumes.com.br/produtos/good-girl-decants/" // SUBSTITUA PELO LINK REAL
+        url: "https://www.nasnuvensperfumes.com.br/produtos/good-girl-decants"
     },
     {
         id: 10,
         name: "Libre",
         description: "Perfume feminino moderno e libertador, para mulheres independentes.",
         price: "R$ 869,90",
-        image: "images/libre.jpg", // Placeholder - SUBSTITUA PELA IMAGEM REAL
+        image: "images/IMG_1349.jpeg", // ATUALIZADO COM SUA IMAGEM
         tags: ["floral", "amadeirado", "feminino", "moderado", "moderno", "todas_ocasioes"],
-        url: "https://nasnuvensperfumes.com.br/produtos/libre/" 
+        url: "https://www.nasnuvensperfumes.com.br/produtos/libre-90ml"
     }
 ];
 
