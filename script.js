@@ -111,7 +111,7 @@ const perfumeDatabase = [
         price: "R$ 379,90",
         image: "images/sabah_al_ward.jpg", // Placeholder - SUBSTITUA PELA IMAGEM REAL
         tags: ["floral", "oriental", "feminino", "intenso", "quente", "romantico", "eventos_noite"],
-        url: "https://www.nasnuvensperfumes.com.br/produtos/sabah-al-ward" // SUBSTITUA PELO LINK REAL
+        url: "https://nasnuvensperfumes.com.br/produtos/sabah-al-ward-100ml/" // SUBSTITUA PELO LINK REAL
     },
     {
         id: 2,
@@ -120,7 +120,7 @@ const perfumeDatabase = [
         price: "R$ 399,90",
         image: "images/fakhar.jpg", // Placeholder - SUBSTITUA PELA IMAGEM REAL
         tags: ["floral", "amadeirado", "feminino", "moderado", "classico", "dia_trabalho"],
-        url: "https://www.nasnuvensperfumes.com.br/produtos/fakhar" // SUBSTITUA PELO LINK REAL
+        url: "https://nasnuvensperfumes.com.br/produtos/fakhar-100ml-ref-olfativa-linterdit/" // SUBSTITUA PELO LINK REAL
     },
     {
         id: 3,
@@ -129,7 +129,7 @@ const perfumeDatabase = [
         price: "R$ 79,90",
         image: "images/royal_amber.jpg", // Placeholder - SUBSTITUA PELA IMAGEM REAL
         tags: ["citrico", "fresco", "unissex", "suave", "moderno", "dia_trabalho", "frutas_citricas"],
-        url: "https://www.nasnuvensperfumes.com.br/produtos/royal-amber-decants" // SUBSTITUA PELO LINK REAL
+        url: "https://nasnuvensperfumes.com.br/produtos/royal-amber-decants-ref-olfativa-erba-pura-durrat/" // SUBSTITUA PELO LINK REAL
     },
     {
         id: 4,
@@ -138,7 +138,7 @@ const perfumeDatabase = [
         price: "R$ 49,90",
         image: "images/yara.jpg", // Placeholder - SUBSTITUA PELA IMAGEM REAL
         tags: ["doces", "oriental", "feminino", "moderado", "romantico_delicado", "todas_ocasioes"],
-        url: "https://www.nasnuvensperfumes.com.br/produtos/yara-decants" // SUBSTITUA PELO LINK REAL
+        url: "https://nasnuvensperfumes.com.br/produtos/yara-decants/" // SUBSTITUA PELO LINK REAL
     },
     {
         id: 5,
@@ -147,7 +147,7 @@ const perfumeDatabase = [
         price: "R$ 619,90",
         image: "images/1_million.jpg", // Placeholder - SUBSTITUA PELA IMAGEM REAL
         tags: ["especiarias", "amadeirado", "masculino", "intenso", "sedutor", "eventos_noite"],
-        url: "https://www.nasnuvensperfumes.com.br/produtos/1-million" // SUBSTITUA PELO LINK REAL
+        url: "https://nasnuvensperfumes.com.br/produtos/1-million/" // SUBSTITUA PELO LINK REAL
     },
     {
         id: 6,
@@ -156,7 +156,7 @@ const perfumeDatabase = [
         price: "R$ 599,90",
         image: "images/light_blue.jpg", // Placeholder - SUBSTITUA PELA IMAGEM REAL
         tags: ["aquaticas", "citrico", "unissex", "suave", "casual", "primavera_verao", "frutas_citricas"],
-        url: "https://www.nasnuvensperfumes.com.br/produtos/light-blue" // SUBSTITUA PELO LINK REAL
+        url: "https://nasnuvensperfumes.com.br/produtos/light-blue/" // SUBSTITUA PELO LINK REAL
     },
     {
         id: 7,
@@ -165,7 +165,7 @@ const perfumeDatabase = [
         price: "R$ 689,90",
         image: "images/chloe.jpg", // Placeholder - SUBSTITUA PELA IMAGEM REAL
         tags: ["flores", "floral", "feminino", "suave", "romantico_delicado", "classico"],
-        url: "https://www.nasnuvensperfumes.com.br/produtos/chloe" // SUBSTITUA PELO LINK REAL
+        url: "https://nasnuvensperfumes.com.br/produtos/chloe/" // SUBSTITUA PELO LINK REAL
     },
     {
         id: 8,
@@ -174,7 +174,7 @@ const perfumeDatabase = [
         price: "R$ 519,90",
         image: "images/invictus.jpg", // Placeholder - SUBSTITUA PELA IMAGEM REAL
         tags: ["aquaticas", "fresco", "masculino", "moderado", "casual", "moderno"],
-        url: "https://www.nasnuvensperfumes.com.br/produtos/invictus" // SUBSTITUA PELO LINK REAL
+        url: "https://nasnuvensperfumes.com.br/produtos/invictus/" // SUBSTITUA PELO LINK REAL
     },
     {
         id: 9,
@@ -183,7 +183,7 @@ const perfumeDatabase = [
         price: "R$ 59,90",
         image: "images/good_girl.jpg", // Placeholder - SUBSTITUA PELA IMAGEM REAL
         tags: ["doces", "oriental", "feminino", "intenso", "sedutor", "eventos_noite"],
-        url: "https://www.nasnuvensperfumes.com.br/produtos/good-girl-decants" // SUBSTITUA PELO LINK REAL
+        url: "https://nasnuvensperfumes.com.br/produtos/good-girl-decants/" // SUBSTITUA PELO LINK REAL
     },
     {
         id: 10,
@@ -192,7 +192,7 @@ const perfumeDatabase = [
         price: "R$ 869,90",
         image: "images/libre.jpg", // Placeholder - SUBSTITUA PELA IMAGEM REAL
         tags: ["floral", "amadeirado", "feminino", "moderado", "moderno", "todas_ocasioes"],
-        url: "https://www.nasnuvensperfumes.com.br/produtos/libre" 
+        url: "https://nasnuvensperfumes.com.br/produtos/libre/" 
     }
 ];
 
