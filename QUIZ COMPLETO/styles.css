@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;700&display=swap' );
+
+:root {
+    --primary-color: #4A90E2; /* Azul principal */
+    --secondary-color: #6B7A8F; /* Cinza azulado */
+    --accent-color: #FFD700; /* Dourado/Amarelo para destaque */
+    --background-light: #F0F8FF; /* Azul muito claro */
+    --background-dark: #2C3E50; /* Azul escuro para contraste */
+    --text-color-dark: #333;
+    --text-color-light: #fff;
+    --border-color: #D1E0F0;
+    --shadow-light: rgba(0, 0, 0, 0.1);
+    --shadow-medium: rgba(0, 0, 0, 0.2);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, var(--background-light) 0%, var(--primary-color) 100%);
+    color: var(--text-color-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.quiz-wrapper {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px var(--shadow-medium);
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+.ai-character {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.cheirosinha-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 0 15px rgba(74, 144, 226, 0.5); /* Brilho azul */
+    animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+    from { transform: scale(1); box-shadow: 0 0 15px rgba(74, 144, 226, 0.5); }
+    to { transform: scale(1.05); box-shadow: 0 0 25px rgba(74, 144, 226, 0.8); }
+}
+
+.ai-bubble {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin-left: 15px;
+    position: relative;
+    font-size: 1.1em;
+    line-height: 1.5;
+    box-shadow: 0 5px 15px var(--shadow-medium);
+    animation: bubblePop 0.5s ease-out;
+}
+
+@keyframes bubblePop {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.ai-bubble::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 20px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid var(--primary-color);
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: var(--border-color);
+    height: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 0%;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    transition: width 0.4s ease-in-out;
+}
+
+.progress-text {
+    text-align: right;
+    font-size: 0.9em;
+    color: var(--secondary-color);
+    margin-top: -5px;
+    margin-bottom: 25px;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.option-button {
+    background-color: var(--background-light);
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    padding: 15px 20px;
+    font-size: 1.1em;
+    color: var(--text-color-dark);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+}
+
+.option-button:hover {
+    border-color: var(--primary-color);
+    background-color: rgba(74, 144, 226, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px var(--shadow-light);
+}
+
+.option-button.selected {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    border-color: var(--primary-color);
+    box-shadow: 0 5px 15px rgba(74, 144, 226, 0.4);
+    transform: translateY(-3px);
+}
+
+.option-button.selected .option-indicator svg {
+    color: var(--accent-color); /* Cor do checkmark */
+}
+
+.option-indicator {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.option-indicator svg {
+    width: 24px;
+    height: 24px;
+    color: var(--text-color-light); /* Cor padrão do checkmark */
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex-grow: 1;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    box-shadow: 0 4px 10px rgba(74, 144, 226, 0.3);
+}
+
+.btn-primary:hover {
+    background-color: #3A7AD9; /* Tom mais escuro do azul */
+    box-shadow: 0 6px 15px rgba(74, 144, 226, 0.5);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--text-color-light);
+    box-shadow: 0 4px 10px rgba(107, 122, 143, 0.3);
+}
+
+.btn-secondary:hover {
+    background-color: #5A6B7F; /* Tom mais escuro do cinza azulado */
+    box-shadow: 0 6px 15px rgba(107, 122, 143, 0.5);
+    transform: translateY(-2px);
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+/* Resultados */
+.results-container {
+    text-align: center;
+}
+
+.result-ai {
+    margin-bottom: 40px;
+}
+
+.perfumes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.perfume-card {
+    background-color: var(--background-light);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px var(--shadow-light);
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.perfume-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px var(--shadow-medium);
+}
+
+.perfume-image-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    background-color: #eee; /* Placeholder background */
+}
+
+.perfume-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: var(--accent-color);
+    color: var(--text-color-dark);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.badge svg {
+    width: 18px;
+    height: 18px;
+    color: var(--text-color-dark);
+}
+
+.perfume-info {
+    padding: 20px;
+}
+
+.perfume-name {
+    font-size: 1.4em;
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.perfume-description {
+    font-size: 0.95em;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.perfume-price {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--text-color-dark);
+    margin-bottom: 20px;
+}
+
+.perfume-actions {
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .quiz-wrapper {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .ai-character {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .ai-bubble {
+        margin-left: 0;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .ai-bubble::before {
+        left: 50%;
+        top: -10px;
+        transform: translateX(-50%) rotate(90deg);
+        border-right: 10px solid var(--primary-color);
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+    }
+
+    .btn {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    .perfumes-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .quiz-wrapper {
+        padding: 15px;
+    }
+
+    .logo {
+        max-width: 150px;
+    }
+
+    .option-button {
+        font-size: 1em;
+        padding: 12px 15px;
+    }
+}

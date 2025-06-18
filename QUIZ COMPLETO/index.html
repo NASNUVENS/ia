@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Perfumes Nas Nuvens</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="quiz-wrapper">
+        <div class="header">
+            <img src="logomarca_nasnuvens.png" alt="Nas Nuvens Perfumes Logo" class="logo">
+        </div>
+
+        <div id="quiz-container" class="quiz-container">
+            <div class="ai-character">
+                <img src="cheirosinha_ia_animada.png" alt="Cheirosinha AI" class="cheirosinha-img">
+                <div class="ai-bubble">Olá! Sou a Cheirosinha, sua consultora de perfumes IA. Vamos encontrar a fragrância perfeita para você!</div>
+            </div>
+            
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+            <p class="progress-text"><span id="question-number">Pergunta 1 de 10</span> - <span id="progress-percentage">0% completo</span></p>
+            
+            <h2 id="question-title"></h2>
+            <div id="options-container" class="options-container">
+                <!-- Opções do quiz serão carregadas aqui pelo JavaScript -->
+            </div>
+            
+            <div class="navigation-buttons">
+                <button id="prev-btn" class="btn btn-secondary">Anterior</button>
+                <button id="next-btn" class="btn btn-primary">Próxima</button>
+            </div>
+        </div>
+
+        <div id="results-container" class="results-container" style="display: none;">
+            <div class="ai-character result-ai">
+                <img src="cheirosinha_ia_animada.png" alt="Cheirosinha AI" class="cheirosinha-img">
+                <div class="ai-bubble">Encontrei os perfumes ideais para você!</div>
+            </div>
+            <h2>Seus Perfumes Recomendados:</h2>
+            <div id="perfumes-container" class="perfumes-container">
+                <!-- Perfumes recomendados serão carregados aqui pelo JavaScript -->
+            </div>
+            <div class="result-actions">
+                <button id="restart-btn" class="btn btn-secondary">Refazer Quiz</button>
+                <button id="shop-btn" class="btn btn-primary">Visitar Loja Nas Nuvens</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
